@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+           <title>Simple Quote Page</title>
+           <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+           <style>
+               body{
+                   margin: 0;
+                   padding: 0;
+                   font-family:Verdana, Geneva, Tahoma, sans-serif;
+                   text-align: center;
+               }
+               .border{
+                   width: 500px;
+                   height: 555px;
+                   margin: 10px;
+                   padding: 20px;
+                   color: rgb(90, 88, 88);
+                   background-color: rgb(243, 241, 243);
+                   border: 5px solid rgb(243, 241, 243);
+                   box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+                   position: relative;
+                   left: 400px;
+               }
+               .logo{
+                   position: relative;
+                   top: -18px;
+               }
+
+               .head{
+                   color: grey;
+                   margin-bottom: 6px;
+                   font-size: 15px;
+                   position: relative;
+                   top: -22px;
+               }
+               .head1{
+                   color: grey;
+                   font-size: 20px;
+               }
+               .head2{
+                   color: grey;
+                   font-size: 10px;
+                   position: relative;
+                   top: -15px;
+               }
+               .header{
+                   margin-left: 200px;
+                   display:flex;
+               }
+               img{
+                   margin-top: 5px;
+                   margin-right: 2px;
+                   width: 30px;
+                   height: 30px;
+                   border-radius: 50%;
+               }
+               .center{
+                   background-color: white;
+                   width: 450px;
+                   height: 250px;
+                   border: 1px rgb(247, 190, 84) solid;
+                   border-radius: 30px;
+                   margin: auto;
+                   margin-top: 22px;
+               }
+               .box{
+                   background-color: white;
+                   width: 70px;
+                   height: 70px;
+                   padding: 2px;
+                   border: 2px rgb(247, 190, 84) solid;
+                   border-radius: 50%;
+                   position: relative;
+                   top: -30px;
+                   left: 20px;
+               }
+               .message{
+                   position: relative;
+                   top: 10px;
+                   left: -40px;
+               }
+               .para{
+                  color: grey;
+                  position: relative;
+                  top: 12px;
+                  left: -160px;
+               }
+               .fb{
+                   width: 20px;
+                   height: 20px;
+                   padding: 3px;
+                   border: 1px blue solid;
+                   border-radius: 50%;
+               }
+               #bottom{
+                   margin-top: 50px;
+                   margin-left: 250px;
+               }
+               #share{
+                color: grey;
+                   font-size: small;
+                   margin-right: 3px;
+                   position: relative;
+                   top: -9px;
+               }
+               .insta{
+                   width: 20px;
+                   height: 20px;
+                   padding: 3px;
+                   border: 1px black solid;
+                   border-radius: 50%;
+               }
+               .twitter{
+                   width: 20px;
+                   height: 20px;
+                   padding: 3px;
+                   border: 1px skyblue solid;
+                   border-radius: 50%;
+               }
+               #quotes{
+                   font-size: 8px;
+                   position: relative;
+                   top: 7px;
+               }
+               .link{
+                   color: blue;
+               }
+               #foot{
+                   display: flex;
+               }
+               .view{
+                   font-size: 10px;
+                   position: relative;
+                   top: 115px;
+               }
+               .foot1{
+                   font-size: 10px;
+                   position: relative;
+                   top: 90px;
+                   left: 250px;
+               }
+               .footimage{
+                   position: relative;
+                   top: 100px;
+                   left: 250px;
+               }
+               .footer{
+                   border-top: 1px solid grey;
+                   font-size: 6px;
+                   padding-top: 5px;
+                   position: relative;
+                   top: 100px;
+               }
+             @media(max-width:780px){
+                body{
+                   margin: 0;
+                   padding: 0;
+                   font-family:Verdana, Geneva, Tahoma, sans-serif;
+                   text-align: center;
+               }
+               .border{
+                   width: 500px;
+                   height: 555px;
+                   color: rgb(90, 88, 88);
+                   background-color: rgb(243, 241, 243);
+                   border: 5px solid rgb(243, 241, 243);
+                   box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+                  
+               }
+               .logo{
+                   position: relative;
+                   top: -18px;
+               }
+
+               .head{
+                   color: grey;
+                   margin-bottom: 6px;
+                   font-size: 15px;
+                   position: relative;
+                   top: -22px;
+               }
+               .head1{
+                   color: grey;
+                   font-size: 20px;
+               }
+               .head2{
+                   color: grey;
+                   font-size: 10px;
+                   position: relative;
+                   top: -15px;
+               }
+               .header{
+                   margin-left: 200px;
+                   display:flex;
+               }
+               img{
+                   margin-top: 5px;
+                   margin-right: 2px;
+                   width: 30px;
+                   height: 30px;
+                   border-radius: 50%;
+               }
+               .center{
+                   background-color: white;
+                   width: 450px;
+                   height: 250px;
+                   border: 1px rgb(247, 190, 84) solid;
+                   border-radius: 30px;
+                   margin: auto;
+                   margin-top: 22px;
+               }
+               .box{
+                   background-color: white;
+                   width: 70px;
+                   height: 70px;
+                   padding: 2px;
+                   border: 2px rgb(247, 190, 84) solid;
+                   border-radius: 50%;
+                   position: relative;
+                   top: -30px;
+               }
+               .message{
+                   position: relative;
+                   top: 10px;
+               }
+               .para{
+                  color: grey;
+                  position: relative;
+                  top: 12px;
+                  left: -160px;
+               }
+               .fb{
+                   width: 20px;
+                   height: 20px;
+                   padding: 3px;
+                   border: 1px blue solid;
+                   border-radius: 50%;
+               }
+               #bottom{
+                   margin-top: 50px;
+                   margin-left: 250px;
+               }
+               #share{
+                color: grey;
+                   font-size: small;
+                   margin-right: 3px;
+                   position: relative;
+                   top: -9px;
+               }
+               .insta{
+                   width: 20px;
+                   height: 20px;
+                   padding: 3px;
+                   border: 1px black solid;
+                   border-radius: 50%;
+               }
+               .twitter{
+                   width: 20px;
+                   height: 20px;
+                   padding: 3px;
+                   border: 1px skyblue solid;
+                   border-radius: 50%;
+               }
+               #quotes{
+                   font-size: 8px;
+                   position: relative;
+                   top: 7px;
+               }
+               .link{
+                   color: blue;
+               }
+               #foot{
+                   display: flex;
+               }
+               .view{
+                   font-size: 10px;
+                   position: relative;
+                   top: 115px;
+               }
+               .foot1{
+                   font-size: 10px;
+                   position: relative;
+                   top: 90px;
+                   left: 250px;
+               }
+               .footimage{
+                   position: relative;
+                   top: 100px;
+                   left: 250px;
+               }
+               .footer{
+                   border-top: 1px solid grey;
+                   font-size: 6px;
+                   padding-top: 5px;
+                   position: relative;
+                   top: 100px;
+               }
+             }
+           </style>
+       </head>
+       <body> 
+           <div class="border">
+                 <div class="header">
+                     <img  class="logo" src="saibaba.jpeg" alt="">
+                     <p class="head">BoloSai</p>
+                    </div>
+                 <p class="head1">Positive Sai Message</p>
+                 <p class="head2">Shraddha aur saburi</p>
+                 <div class="center">
+                        <img  class="box" src="baba.jpeg" alt="">
+                        <img  class="message" src="message.png" alt="">
+                        <p><pre class="para">
+                            Your Desires are not your Problems..Baba solves
+                            your Problems here...For your Wishes&Desires,
+                           Please Contact saiBaba Directly...
+                        </pre></p>
+                        <div id="bottom">
+                            <i id="share">Share it on</i>
+                            <img class="fb" src="facebook.jpeg" alt="">
+                            <img class="insta" src="instagram.png" alt="">
+                            <img class="twitter" src="twitter.png" alt="">
+                        </div>
+                        <div>
+                            <i id="quotes">Note:All the quotes here are referred from Shiridi Sai Baba's sayings,books,movies and online contents,these are inspired contents,we are showing Each quote loads automatically every quotes gives us a positive hope.</i>
+                        </div>
+                 </div>
+                 <div  id="foot" >
+                     <p class="view">View Miracles</p>
+                     
+                     <img class="footimage" src="profile.jpeg" alt="">
+                     <div class="foot1">
+                         <p>you experienced Miracles?</p>
+                         <p class="link">share it with community</p>
+                     </div>
+                 </div>
+                 <div class="footer">
+                     <p>This website is completely dedicated to Shiridi Saibaba & is meant to spread his message and to help everyone find answers to their problems  Support</p>
+                 </div>
+           </div>
+       </body>
+</html>
